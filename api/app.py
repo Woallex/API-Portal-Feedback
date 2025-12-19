@@ -5,11 +5,11 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(
-    app,
-    supports_credentials=True,
-    origins=["http://localhost:5173"]
-)
+CORS(app, supports_credentials=True, origins=[
+    "http://localhost:5173",
+    "https://seu-front-no-vercel.vercel.app"
+])
+
 
 app.config.update(
     SESSION_COOKIE_SAMESITE='Lax',
