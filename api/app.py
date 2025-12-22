@@ -7,7 +7,7 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app, supports_credentials=True, origins=[
     "http://localhost:5173",
-    "https://seu-front-no-vercel.vercel.app"
+    "https://vercel.com/woallexs-projects/front-portal-feedback-aluno"
 ])
 
 
