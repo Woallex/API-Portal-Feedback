@@ -5,10 +5,12 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True, origins=[
+CORS(app, supports_credentials=True, 
+    origins=[
     "http://localhost:5173",
     "https://vercel.com/woallexs-projects/front-portal-feedback-aluno"
-])
+    ]
+)
 
 
 app.config.update(
@@ -382,3 +384,5 @@ def listar_favoritos():
 # Inicializa o servidor Flask apenas se este arquivo for executado diretamente
 if __name__ == '__main__':
     app.run(debug=True)
+
+app = app
